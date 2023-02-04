@@ -3,7 +3,7 @@ import {Pokemon} from "@/interfaces/pokemon-full"
 import DarkLayout from "@/components/layouts/DarkLayout"
 import {Button, Card, Grid, Text, Image, Container} from "@nextui-org/react"
 import {getPokemonInfo, helpers, localFavorites} from "@/utils"
-import {useEffect, useState} from "react";
+import {useEffect, useState} from "react"
 import confetti from "canvas-confetti"
 
 interface Props {

@@ -17,7 +17,7 @@ export const Navbar = () => {
             backgroundColor: theme?.colors.gray100.value,
         }}>
             <NextLink href="/" passHref>
-                <div style={{ display:'flex', alignItems:'center', justifyContent: 'space-between' }}>
+                <div style={{ display:'flex', alignItems:'center', justifyContent: 'space-between', textAlign: "center" }}>
                     <Image
                         src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png"
                         alt="App Icon"
@@ -25,7 +25,16 @@ export const Navbar = () => {
                         height={ 70 }
                     />
                     <Text color="white" h2>P</Text>
-                    <Text color="white" h3>okémon</Text>
+                    <Text color="white" h3>okémon by</Text>
+
+                    <Spacer x={ 0.3 } />
+
+                    <Text
+                        h3
+                        css={{
+                            textGradient: "45deg, $purple600 -20%, $pink600 100%",
+                        }}
+                        weight="bold">LeMonsalve</Text>
                     <Spacer css={{ flex: 1 }} />
                 </div>
             </NextLink>
